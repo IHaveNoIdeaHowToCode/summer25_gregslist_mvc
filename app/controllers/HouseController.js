@@ -4,4 +4,6 @@ export class HouseController {
   constructor() {
     // console.log("House Controller is here!");
   }
+
+
 }

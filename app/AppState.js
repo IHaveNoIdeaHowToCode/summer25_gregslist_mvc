@@ -73,6 +73,15 @@ class ObservableAppState extends EventEmitter {
       price: 175000,
       description: 'Recently refurbished post war home, ready for a new family',
       imgURL: 'https://plus.unsplash.com/premium_photo-1733760125038-06564d0a4568?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8MTk0MHMlMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D'
+    }),
+    new House({
+      year: '2025',
+      bedrooms: 8,
+      bathrooms: 4,
+      sqft: 10000,
+      price: 2500000,
+      description: 'Brand new home nestled in the Eagle foothills, ready for a California millionaire!',
+      imgURL: 'https://plus.unsplash.com/premium_photo-1661883982941-50af7720a6ff?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8TWFuc2lvbnxlbnwwfHwwfHx8MA%3D%3D'
     })
   ]
 }
