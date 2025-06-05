@@ -1,5 +1,5 @@
 import { AppState } from "../AppState.js";
-import { houseService, HouseService } from "../services/HouseService.js";
+import { houseService } from "../services/HouseService.js";
 import { getFormData } from "../utils/FormHandler.js";
 
 export class HouseController {
@@ -15,13 +15,13 @@ export class HouseController {
     const houses = AppState.houses
     let houseListingContent = ''
     houses.forEach(house => houseListingContent += house.listingHTMLTemplate)
-    const houseListingsElm = document.getElementById('house-listings')
+    const houseListingsElem = document.getElementById('house-listings')
     // console.log('drawing houses', houseListingsElm);
-    houseListingsElm.innerHTML = houseListingContent
+    houseListingsElem.innerHTML = houseListingContent
   }
 
   createHouse() {
-    // event.preventDefault()
+    event.preventDefault()
     const formElem = event.target
     const houseData = getFormData(formElem)
 
